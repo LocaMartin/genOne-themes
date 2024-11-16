@@ -19,7 +19,7 @@ jobs:
         node-version: '20.17.0'
 
     - name: install next.js
-      run: npx create-next-app@latest ./ --typescript --eslint --yes
+      run: npx create-next-app@latest ./ --typescript --eslint --yes --ignore-files=*.git,.github
 
     - name: Install dependencies
       run: npm ci || npm install
